@@ -1,1 +1,78 @@
-[]
+[
+    {
+        "id": "4e3308c8a425e5aa",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9b811b88a2e893d0",
+        "type": "serial-port",
+        "name": "CanSat",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "115200",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "3547dfa233b7d62e",
+        "type": "serial in",
+        "z": "4e3308c8a425e5aa",
+        "name": "Read CanSat",
+        "serial": "9b811b88a2e893d0",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "4dff442246bcb25d"
+            ]
+        ]
+    },
+    {
+        "id": "4dff442246bcb25d",
+        "type": "json",
+        "z": "4e3308c8a425e5aa",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "4c6ca5378c4a1559"
+            ]
+        ]
+    },
+    {
+        "id": "4c6ca5378c4a1559",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "name": "function 1",
+        "func": "console.log(msg);\n// return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
