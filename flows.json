@@ -8,6 +8,89 @@
         "env": []
     },
     {
+        "id": "0638856b0b58533d",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f997ee2e75529aec",
+            "8331426ab672a0d2",
+            "0ba628f1b33cce06",
+            "736cf8703e4f0a6f"
+        ],
+        "x": 234,
+        "y": 839,
+        "w": 832,
+        "h": 162
+    },
+    {
+        "id": "3ac4614074b584c9",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3547dfa233b7d62e",
+            "d7a8be1ef2c3f08c",
+            "dacaf47b3dcc5134",
+            "b84c65335caff905",
+            "1a3155631653a283",
+            "a1e48aac6d605c8d",
+            "e1492797c96fc727",
+            "06fa0a8f0128871d",
+            "a0c1bfb091e8e142",
+            "4702d732236ca5bc",
+            "045d5afefe99a778",
+            "90065f2b1a3a5762",
+            "aae6aa213d618717",
+            "3e5a2a28f3501473",
+            "6e01d36b48497f7d",
+            "5eafda1826f0d5a4",
+            "1a7d0546fdb54147"
+        ],
+        "x": 154,
+        "y": 79,
+        "w": 1212,
+        "h": 542
+    },
+    {
+        "id": "d9b017e772e6b8ed",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "96b5d7b6b4e9a96e",
+            "e970eb780bc6129b"
+        ],
+        "x": 54,
+        "y": 679,
+        "w": 512,
+        "h": 82
+    },
+    {
         "id": "9b811b88a2e893d0",
         "type": "serial-port",
         "name": "CanSat",
@@ -28,51 +111,815 @@
         "responsetimeout": 10000
     },
     {
+        "id": "81dac7e1a86008bc",
+        "type": "ui_tab",
+        "name": "Main",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "452071d4f69ee64f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4c73ace1e4886fb4",
+        "type": "ui_group",
+        "name": "Internal Temp Group",
+        "tab": "81dac7e1a86008bc",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "bc35821eb5c27229",
+        "type": "ui_group",
+        "name": "Ground Station Status",
+        "tab": "81dac7e1a86008bc",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "09380e53c37d0afe",
+        "type": "ui_group",
+        "name": "BME 280 Data",
+        "tab": "81dac7e1a86008bc",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "ce15e6373ca0c04d",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 2,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "1dd0745f55934434",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 3,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "e9a0bd26d39382b5",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 4,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "617bc149fbfbd73c",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 6,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "c0136f5679f519bb",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 7,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "22a1ce2c81c8ef0d",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 8,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "919d6e4965f8e307",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 10,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "fc7483c6c5bfe989",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 11,
+        "width": 14,
+        "height": 1
+    },
+    {
+        "id": "4519d57257c5d1d9",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 12,
+        "width": 14,
+        "height": 1
+    },
+    {
         "id": "3547dfa233b7d62e",
         "type": "serial in",
         "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
         "name": "Read CanSat",
         "serial": "9b811b88a2e893d0",
-        "x": 330,
-        "y": 280,
+        "x": 250,
+        "y": 380,
         "wires": [
             [
-                "4dff442246bcb25d"
+                "dacaf47b3dcc5134"
             ]
         ]
     },
     {
-        "id": "4dff442246bcb25d",
+        "id": "d7a8be1ef2c3f08c",
+        "type": "debug",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Packet Message Debug Printer",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "dacaf47b3dcc5134",
         "type": "json",
         "z": "4e3308c8a425e5aa",
-        "name": "",
+        "g": "3ac4614074b584c9",
+        "name": "JSON packet parser",
         "property": "payload",
-        "action": "str",
-        "pretty": true,
-        "x": 550,
-        "y": 280,
+        "action": "obj",
+        "pretty": false,
+        "x": 620,
+        "y": 380,
         "wires": [
             [
-                "4c6ca5378c4a1559"
+                "d7a8be1ef2c3f08c",
+                "a1e48aac6d605c8d",
+                "a0c1bfb091e8e142",
+                "045d5afefe99a778",
+                "90065f2b1a3a5762",
+                "aae6aa213d618717",
+                "1a7d0546fdb54147"
             ]
         ]
     },
     {
-        "id": "4c6ca5378c4a1559",
+        "id": "b84c65335caff905",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Internal Temperature",
+        "group": "4c73ace1e4886fb4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Onboard Temp [°C]",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Onboard Temperature Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1240,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a3155631653a283",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "group": "bc35821eb5c27229",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Packet Counter",
+        "label": "Packet Counter:",
+        "format": "{{msg.payload.counter}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1140,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a1e48aac6d605c8d",
         "type": "function",
         "z": "4e3308c8a425e5aa",
-        "name": "function 1",
-        "func": "console.log(msg);\n// return msg;",
+        "g": "3ac4614074b584c9",
+        "name": "Parse Onboard Temperature",
+        "func": "msg.payload = msg.payload.onboard_temperature;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 280,
+        "x": 980,
+        "y": 500,
+        "wires": [
+            [
+                "b84c65335caff905"
+            ]
+        ]
+    },
+    {
+        "id": "e1492797c96fc727",
+        "type": "inject",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Simulate Input",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"temperature\":5,\"pressure\":1030,\"altitude\":206,\"humidity\":75,\"onboard_temperature\":25,\"counter\":-1}",
+        "payloadType": "json",
+        "x": 300,
+        "y": 260,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "06fa0a8f0128871d",
+        "type": "comment",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Simulated input comment",
+        "info": "This inject node is meant to simulate input from CanSat with data if none is available.",
+        "x": 350,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f997ee2e75529aec",
+        "type": "debug",
+        "z": "4e3308c8a425e5aa",
+        "g": "0638856b0b58533d",
+        "name": "Debug connection status",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 800,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "8331426ab672a0d2",
+        "type": "status",
+        "z": "4e3308c8a425e5aa",
+        "g": "0638856b0b58533d",
+        "name": "Serial Connection Status Monitor",
+        "scope": [
+            "3547dfa233b7d62e"
+        ],
+        "x": 390,
+        "y": 880,
+        "wires": [
+            [
+                "736cf8703e4f0a6f"
+            ]
+        ]
+    },
+    {
+        "id": "0ba628f1b33cce06",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "0638856b0b58533d",
+        "group": "bc35821eb5c27229",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Board Connection",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 950,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "736cf8703e4f0a6f",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "0638856b0b58533d",
+        "name": "Status Parser",
+        "func": "let message = msg.status.text;\nif (message === \"node-red:common.status.connected\") {\n    msg.payload = \"Connected\";\n}\nelse if (message === \"node-red:common.status.not-connected\") {\n    msg.payload = \"Not connected\";\n} else {\n    msg.payload = message;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 880,
+        "wires": [
+            [
+                "0ba628f1b33cce06",
+                "f997ee2e75529aec"
+            ]
+        ]
+    },
+    {
+        "id": "a0c1bfb091e8e142",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse Temperature",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 260,
+        "wires": [
+            [
+                "4702d732236ca5bc"
+            ]
+        ]
+    },
+    {
+        "id": "4702d732236ca5bc",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Temperature Chart",
+        "group": "09380e53c37d0afe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature [°C]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1180,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "045d5afefe99a778",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse pressure",
+        "func": "msg.payload = msg.payload.pressure;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "3e5a2a28f3501473"
+            ]
+        ]
+    },
+    {
+        "id": "90065f2b1a3a5762",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse Altitude",
+        "func": "msg.payload = msg.payload.altitude;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "6e01d36b48497f7d"
+            ]
+        ]
+    },
+    {
+        "id": "aae6aa213d618717",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse Humidity",
+        "func": "msg.payload = msg.payload.humidity;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 440,
+        "wires": [
+            [
+                "5eafda1826f0d5a4"
+            ]
+        ]
+    },
+    {
+        "id": "3e5a2a28f3501473",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Pressure Chart",
+        "group": "09380e53c37d0afe",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Pressure [hpa]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1180,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e01d36b48497f7d",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Altitude chart",
+        "group": "09380e53c37d0afe",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "Altitude [m]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5eafda1826f0d5a4",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Humidity Chart",
+        "group": "09380e53c37d0afe",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity [%]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1180,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96b5d7b6b4e9a96e",
+        "type": "catch",
+        "z": "4e3308c8a425e5aa",
+        "g": "d9b017e772e6b8ed",
+        "name": "Non-JSON packet data catcher",
+        "scope": [
+            "dacaf47b3dcc5134"
+        ],
+        "uncaught": false,
+        "x": 210,
+        "y": 720,
+        "wires": [
+            [
+                "e970eb780bc6129b"
+            ]
+        ]
+    },
+    {
+        "id": "e970eb780bc6129b",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "d": true,
+        "g": "d9b017e772e6b8ed",
+        "group": "bc35821eb5c27229",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Other Message",
+        "label": "Latest non-JSON message:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 460,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "1a7d0546fdb54147",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Simulation checker",
+        "func": "let count = msg.payload.counter;\nif (count === -1) {\n    msg.payload.counter = \"Simulated Packet!\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 580,
+        "wires": [
+            [
+                "1a3155631653a283"
+            ]
         ]
     }
 ]

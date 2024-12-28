@@ -1,9 +1,8 @@
 CanSat_Node-RED
 ===============
 
-Data plotter for our CanSat Project
+Data plotter for our CanSat Project. If the node-red is run at localhost the Dashboard can be found at **127.0.0.1:1880/ui**.
 
 ### About
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+Please make sure your SteinSat ground station and satellite code is up to date!
