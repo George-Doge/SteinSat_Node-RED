@@ -26,8 +26,8 @@
             "0ba628f1b33cce06",
             "736cf8703e4f0a6f"
         ],
-        "x": 234,
-        "y": 839,
+        "x": 134,
+        "y": 879,
         "w": 832,
         "h": 162
     },
@@ -59,13 +59,16 @@
             "90065f2b1a3a5762",
             "aae6aa213d618717",
             "3e5a2a28f3501473",
-            "6e01d36b48497f7d",
             "5eafda1826f0d5a4",
-            "1a7d0546fdb54147"
+            "1a7d0546fdb54147",
+            "f48f8f6c74071576",
+            "8df0219e270e9ed8",
+            "c5ca8610ab2ccfee",
+            "6e01d36b48497f7d"
         ],
-        "x": 154,
+        "x": 134,
         "y": 79,
-        "w": 1212,
+        "w": 1232,
         "h": 542
     },
     {
@@ -85,8 +88,8 @@
             "96b5d7b6b4e9a96e",
             "e970eb780bc6129b"
         ],
-        "x": 54,
-        "y": 679,
+        "x": 134,
+        "y": 739,
         "w": 512,
         "h": 82
     },
@@ -220,7 +223,7 @@
         "type": "ui_group",
         "name": "Internal Temp Group",
         "tab": "81dac7e1a86008bc",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": 6,
         "collapse": true,
@@ -240,103 +243,30 @@
     {
         "id": "09380e53c37d0afe",
         "type": "ui_group",
-        "name": "BME 280 Data",
+        "name": "BME 280 Data 1",
         "tab": "81dac7e1a86008bc",
         "order": 2,
         "disp": true,
-        "width": 14,
+        "width": "11",
         "collapse": true,
         "className": ""
     },
     {
-        "id": "ce15e6373ca0c04d",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 2,
-        "width": 14,
-        "height": 1
+        "id": "857c116ebed285f5",
+        "type": "global-config",
+        "name": "global-config",
+        "env": []
     },
     {
-        "id": "1dd0745f55934434",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
+        "id": "b31b0b58eb65912f",
+        "type": "ui_group",
+        "name": "BME 280 Data 2",
+        "tab": "81dac7e1a86008bc",
         "order": 3,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "e9a0bd26d39382b5",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 4,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "617bc149fbfbd73c",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 6,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "c0136f5679f519bb",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 7,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "22a1ce2c81c8ef0d",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 8,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "919d6e4965f8e307",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 10,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "fc7483c6c5bfe989",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 11,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "4519d57257c5d1d9",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 12,
-        "width": 14,
-        "height": 1
+        "disp": true,
+        "width": "11",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "3547dfa233b7d62e",
@@ -359,7 +289,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Packet Message Debug Printer",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": true,
         "tostatus": false,
@@ -380,7 +310,7 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 620,
+        "x": 580,
         "y": 380,
         "wires": [
             [
@@ -457,7 +387,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1140,
+        "x": 1200,
         "y": 580,
         "wires": []
     },
@@ -523,7 +453,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "0638856b0b58533d",
         "name": "Debug connection status",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": true,
         "tostatus": true,
@@ -531,8 +461,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 800,
-        "y": 960,
+        "x": 700,
+        "y": 1000,
         "wires": []
     },
     {
@@ -544,8 +474,8 @@
         "scope": [
             "3547dfa233b7d62e"
         ],
-        "x": 390,
-        "y": 880,
+        "x": 290,
+        "y": 920,
         "wires": [
             [
                 "736cf8703e4f0a6f"
@@ -570,8 +500,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 950,
-        "y": 880,
+        "x": 850,
+        "y": 920,
         "wires": []
     },
     {
@@ -587,8 +517,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 880,
+        "x": 600,
+        "y": 920,
         "wires": [
             [
                 "0ba628f1b33cce06",
@@ -771,57 +701,12 @@
         ]
     },
     {
-        "id": "6e01d36b48497f7d",
-        "type": "ui_chart",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Altitude chart",
-        "group": "09380e53c37d0afe",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "Altitude [m]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Waiting for sensor Data",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1170,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5eafda1826f0d5a4",
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Humidity Chart",
-        "group": "09380e53c37d0afe",
+        "group": "b31b0b58eb65912f",
         "order": 13,
         "width": 0,
         "height": 0,
@@ -870,8 +755,8 @@
             "dacaf47b3dcc5134"
         ],
         "uncaught": false,
-        "x": 210,
-        "y": 720,
+        "x": 290,
+        "y": 780,
         "wires": [
             [
                 "e970eb780bc6129b"
@@ -897,8 +782,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 460,
-        "y": 720,
+        "x": 540,
+        "y": 780,
         "wires": []
     },
     {
@@ -920,6 +805,125 @@
             [
                 "1a3155631653a283"
             ]
+        ]
+    },
+    {
+        "id": "f48f8f6c74071576",
+        "type": "inject",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.TEST",
+                "v": "packetCounter",
+                "vt": "flow"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "8df0219e270e9ed8"
+            ]
+        ]
+    },
+    {
+        "id": "8df0219e270e9ed8",
+        "type": "change",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "packetCounter",
+                "pt": "flow",
+                "to": "5",
+                "tot": "num",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "c5ca8610ab2ccfee"
+            ]
+        ]
+    },
+    {
+        "id": "c5ca8610ab2ccfee",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "function 1",
+        "func": "console.log(msg.payload.TEST);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e01d36b48497f7d",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Altitude chart",
+        "group": "b31b0b58eb65912f",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "Altitude [m]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            []
         ]
     }
 ]
