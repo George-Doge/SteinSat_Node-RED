@@ -61,14 +61,11 @@
             "3e5a2a28f3501473",
             "5eafda1826f0d5a4",
             "1a7d0546fdb54147",
-            "f48f8f6c74071576",
-            "8df0219e270e9ed8",
-            "c5ca8610ab2ccfee",
             "6e01d36b48497f7d"
         ],
-        "x": 134,
+        "x": 154,
         "y": 79,
-        "w": 1232,
+        "w": 1212,
         "h": 542
     },
     {
@@ -91,6 +88,29 @@
         "x": 134,
         "y": 739,
         "w": 512,
+        "h": 82
+    },
+    {
+        "id": "2dde80892adaa781",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b715fb60e8ea33eb",
+            "1c7ec72837ef7e8d",
+            "b02107c82c051e61"
+        ],
+        "x": 794,
+        "y": 679,
+        "w": 792,
         "h": 82
     },
     {
@@ -291,13 +311,13 @@
         "name": "Packet Message Debug Printer",
         "active": false,
         "tosidebar": true,
-        "console": true,
+        "console": false,
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 850,
         "y": 120,
         "wires": []
     },
@@ -309,7 +329,7 @@
         "name": "JSON packet parser",
         "property": "payload",
         "action": "obj",
-        "pretty": false,
+        "pretty": true,
         "x": 580,
         "y": 380,
         "wires": [
@@ -320,7 +340,8 @@
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
                 "aae6aa213d618717",
-                "1a7d0546fdb54147"
+                "1a7d0546fdb54147",
+                "b02107c82c051e61"
             ]
         ]
     },
@@ -808,80 +829,6 @@
         ]
     },
     {
-        "id": "f48f8f6c74071576",
-        "type": "inject",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "",
-        "props": [
-            {
-                "p": "payload.TEST",
-                "v": "packetCounter",
-                "vt": "flow"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 230,
-        "y": 500,
-        "wires": [
-            [
-                "8df0219e270e9ed8"
-            ]
-        ]
-    },
-    {
-        "id": "8df0219e270e9ed8",
-        "type": "change",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "packetCounter",
-                "pt": "flow",
-                "to": "5",
-                "tot": "num",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 500,
-        "wires": [
-            [
-                "c5ca8610ab2ccfee"
-            ]
-        ]
-    },
-    {
-        "id": "c5ca8610ab2ccfee",
-        "type": "function",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "function 1",
-        "func": "console.log(msg.payload.TEST);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6e01d36b48497f7d",
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
@@ -924,6 +871,70 @@
         "y": 380,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b715fb60e8ea33eb",
+        "type": "file",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "output.csv write",
+        "filename": "Desktop/CanSatOutput/output.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 1480,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c7ec72837ef7e8d",
+        "type": "csv",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "Array to CSV parser",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "Temperature, Pressure, Altitude, Humidity, Onboard Temperature, Counter",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 1220,
+        "y": 720,
+        "wires": [
+            [
+                "b715fb60e8ea33eb"
+            ]
+        ]
+    },
+    {
+        "id": "b02107c82c051e61",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "JSON to Array Converter",
+        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.humidity, msg.payload.onboard_temperature, msg.payload.counter];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 720,
+        "wires": [
+            [
+                "1c7ec72837ef7e8d"
+            ]
         ]
     }
 ]
