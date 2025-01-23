@@ -26,8 +26,8 @@
             "0ba628f1b33cce06",
             "736cf8703e4f0a6f"
         ],
-        "x": 234,
-        "y": 839,
+        "x": 134,
+        "y": 879,
         "w": 832,
         "h": 162
     },
@@ -59,9 +59,9 @@
             "90065f2b1a3a5762",
             "aae6aa213d618717",
             "3e5a2a28f3501473",
-            "6e01d36b48497f7d",
             "5eafda1826f0d5a4",
-            "1a7d0546fdb54147"
+            "1a7d0546fdb54147",
+            "6e01d36b48497f7d"
         ],
         "x": 154,
         "y": 79,
@@ -85,9 +85,32 @@
             "96b5d7b6b4e9a96e",
             "e970eb780bc6129b"
         ],
-        "x": 54,
-        "y": 679,
+        "x": 134,
+        "y": 739,
         "w": 512,
+        "h": 82
+    },
+    {
+        "id": "2dde80892adaa781",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b715fb60e8ea33eb",
+            "1c7ec72837ef7e8d",
+            "b02107c82c051e61"
+        ],
+        "x": 794,
+        "y": 679,
+        "w": 792,
         "h": 82
     },
     {
@@ -220,7 +243,7 @@
         "type": "ui_group",
         "name": "Internal Temp Group",
         "tab": "81dac7e1a86008bc",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": 6,
         "collapse": true,
@@ -240,103 +263,30 @@
     {
         "id": "09380e53c37d0afe",
         "type": "ui_group",
-        "name": "BME 280 Data",
+        "name": "BME 280 Data 1",
         "tab": "81dac7e1a86008bc",
         "order": 2,
         "disp": true,
-        "width": 14,
+        "width": "11",
         "collapse": true,
         "className": ""
     },
     {
-        "id": "ce15e6373ca0c04d",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 2,
-        "width": 14,
-        "height": 1
+        "id": "857c116ebed285f5",
+        "type": "global-config",
+        "name": "global-config",
+        "env": []
     },
     {
-        "id": "1dd0745f55934434",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
+        "id": "b31b0b58eb65912f",
+        "type": "ui_group",
+        "name": "BME 280 Data 2",
+        "tab": "81dac7e1a86008bc",
         "order": 3,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "e9a0bd26d39382b5",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 4,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "617bc149fbfbd73c",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 6,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "c0136f5679f519bb",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 7,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "22a1ce2c81c8ef0d",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 8,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "919d6e4965f8e307",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 10,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "fc7483c6c5bfe989",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 11,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "4519d57257c5d1d9",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 12,
-        "width": 14,
-        "height": 1
+        "disp": true,
+        "width": "11",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "3547dfa233b7d62e",
@@ -359,15 +309,15 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Packet Message Debug Printer",
-        "active": true,
+        "active": false,
         "tosidebar": true,
-        "console": true,
+        "console": false,
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 850,
         "y": 120,
         "wires": []
     },
@@ -379,8 +329,8 @@
         "name": "JSON packet parser",
         "property": "payload",
         "action": "obj",
-        "pretty": false,
-        "x": 620,
+        "pretty": true,
+        "x": 580,
         "y": 380,
         "wires": [
             [
@@ -390,7 +340,8 @@
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
                 "aae6aa213d618717",
-                "1a7d0546fdb54147"
+                "1a7d0546fdb54147",
+                "b02107c82c051e61"
             ]
         ]
     },
@@ -457,7 +408,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1140,
+        "x": 1200,
         "y": 580,
         "wires": []
     },
@@ -523,7 +474,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "0638856b0b58533d",
         "name": "Debug connection status",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": true,
         "tostatus": true,
@@ -531,8 +482,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 800,
-        "y": 960,
+        "x": 700,
+        "y": 1000,
         "wires": []
     },
     {
@@ -544,8 +495,8 @@
         "scope": [
             "3547dfa233b7d62e"
         ],
-        "x": 390,
-        "y": 880,
+        "x": 290,
+        "y": 920,
         "wires": [
             [
                 "736cf8703e4f0a6f"
@@ -570,8 +521,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 950,
-        "y": 880,
+        "x": 850,
+        "y": 920,
         "wires": []
     },
     {
@@ -587,8 +538,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 880,
+        "x": 600,
+        "y": 920,
         "wires": [
             [
                 "0ba628f1b33cce06",
@@ -771,57 +722,12 @@
         ]
     },
     {
-        "id": "6e01d36b48497f7d",
-        "type": "ui_chart",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Altitude chart",
-        "group": "09380e53c37d0afe",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "label": "Altitude [m]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Waiting for sensor Data",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1170,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5eafda1826f0d5a4",
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Humidity Chart",
-        "group": "09380e53c37d0afe",
+        "group": "b31b0b58eb65912f",
         "order": 13,
         "width": 0,
         "height": 0,
@@ -870,8 +776,8 @@
             "dacaf47b3dcc5134"
         ],
         "uncaught": false,
-        "x": 210,
-        "y": 720,
+        "x": 290,
+        "y": 780,
         "wires": [
             [
                 "e970eb780bc6129b"
@@ -897,8 +803,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 460,
-        "y": 720,
+        "x": 540,
+        "y": 780,
         "wires": []
     },
     {
@@ -919,6 +825,115 @@
         "wires": [
             [
                 "1a3155631653a283"
+            ]
+        ]
+    },
+    {
+        "id": "6e01d36b48497f7d",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Altitude chart",
+        "group": "b31b0b58eb65912f",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "label": "Altitude [m]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for sensor Data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b715fb60e8ea33eb",
+        "type": "file",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "output.csv write",
+        "filename": "Desktop/CanSatOutput/output.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 1480,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c7ec72837ef7e8d",
+        "type": "csv",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "Array to CSV parser",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "Temperature, Pressure, Altitude, Humidity, Onboard Temperature, Counter",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 1220,
+        "y": 720,
+        "wires": [
+            [
+                "b715fb60e8ea33eb"
+            ]
+        ]
+    },
+    {
+        "id": "b02107c82c051e61",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "JSON to Array Converter",
+        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.humidity, msg.payload.onboard_temperature, msg.payload.counter];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 720,
+        "wires": [
+            [
+                "1c7ec72837ef7e8d"
             ]
         ]
     }
