@@ -57,15 +57,14 @@
             "4702d732236ca5bc",
             "045d5afefe99a778",
             "90065f2b1a3a5762",
-            "aae6aa213d618717",
             "3e5a2a28f3501473",
-            "5eafda1826f0d5a4",
             "1a7d0546fdb54147",
-            "6e01d36b48497f7d"
+            "6e01d36b48497f7d",
+            "03cfcc4cb4955c13"
         ],
-        "x": 154,
+        "x": 174,
         "y": 79,
-        "w": 1212,
+        "w": 1192,
         "h": 542
     },
     {
@@ -106,12 +105,18 @@
         "nodes": [
             "b715fb60e8ea33eb",
             "1c7ec72837ef7e8d",
-            "b02107c82c051e61"
+            "b02107c82c051e61",
+            "d4927d3b0776bce7",
+            "f2680cc46f6c4dda",
+            "b4b1bc06347f5ef3",
+            "78fc3745a99e9119",
+            "5fd35d1296ac30d0",
+            "40fda92c9ea1533e"
         ],
-        "x": 794,
-        "y": 679,
-        "w": 792,
-        "h": 82
+        "x": 874,
+        "y": 639,
+        "w": 1052,
+        "h": 242
     },
     {
         "id": "9b811b88a2e893d0",
@@ -256,7 +261,7 @@
         "tab": "81dac7e1a86008bc",
         "order": 1,
         "disp": true,
-        "width": 6,
+        "width": 5,
         "collapse": true,
         "className": ""
     },
@@ -267,7 +272,7 @@
         "tab": "81dac7e1a86008bc",
         "order": 2,
         "disp": true,
-        "width": "11",
+        "width": 12,
         "collapse": true,
         "className": ""
     },
@@ -284,9 +289,47 @@
         "tab": "81dac7e1a86008bc",
         "order": 3,
         "disp": true,
-        "width": "11",
+        "width": 12,
         "collapse": true,
         "className": ""
+    },
+    {
+        "id": "3c32f7ed1a78d140",
+        "type": "ui_tab",
+        "name": "Data Read",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "209f46aa68dbd3f5",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "09380e53c37d0afe",
+        "order": 2,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "cf07f92e2ece3026",
+        "type": "ui_spacer",
+        "z": "4e3308c8a425e5aa",
+        "name": "spacer",
+        "group": "b31b0b58eb65912f",
+        "order": 2,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "1ddda3f406556e61",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "3c32f7ed1a78d140",
+        "order": 1,
+        "disp": true,
+        "width": 6
     },
     {
         "id": "3547dfa233b7d62e",
@@ -295,11 +338,11 @@
         "g": "3ac4614074b584c9",
         "name": "Read CanSat",
         "serial": "9b811b88a2e893d0",
-        "x": 250,
+        "x": 290,
         "y": 380,
         "wires": [
             [
-                "dacaf47b3dcc5134"
+                "03cfcc4cb4955c13"
             ]
         ]
     },
@@ -339,7 +382,6 @@
                 "a0c1bfb091e8e142",
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
-                "aae6aa213d618717",
                 "1a7d0546fdb54147",
                 "b02107c82c051e61"
             ]
@@ -401,7 +443,7 @@
         "height": 0,
         "name": "Packet Counter",
         "label": "Packet Counter:",
-        "format": "{{msg.payload.counter}}",
+        "format": "{{msg.payload.packetCount}}",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -418,7 +460,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Parse Onboard Temperature",
-        "func": "msg.payload = msg.payload.onboard_temperature;\nreturn msg;",
+        "func": "msg.payload = msg.payload.onboardTemperature;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -656,34 +698,13 @@
         ]
     },
     {
-        "id": "aae6aa213d618717",
-        "type": "function",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Parse Humidity",
-        "func": "msg.payload = msg.payload.humidity;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 440,
-        "wires": [
-            [
-                "5eafda1826f0d5a4"
-            ]
-        ]
-    },
-    {
         "id": "3e5a2a28f3501473",
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Pressure Chart",
         "group": "09380e53c37d0afe",
-        "order": 5,
+        "order": 3,
         "width": 0,
         "height": 0,
         "label": "Pressure [hpa]",
@@ -717,51 +738,6 @@
         "className": "",
         "x": 1180,
         "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5eafda1826f0d5a4",
-        "type": "ui_chart",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Humidity Chart",
-        "group": "b31b0b58eb65912f",
-        "order": 13,
-        "width": 0,
-        "height": 0,
-        "label": "Humidity [%]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Waiting for sensor Data",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1180,
-        "y": 440,
         "wires": [
             []
         ]
@@ -813,7 +789,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Simulation checker",
-        "func": "let count = msg.payload.counter;\nif (count === -1) {\n    msg.payload.counter = \"Simulated Packet!\";\n}\nreturn msg;",
+        "func": "let count = msg.payload.packetCount;\nif (count === -1) {\n    msg.payload.counter = \"Simulated Packet!\";\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -835,7 +811,7 @@
         "g": "3ac4614074b584c9",
         "name": "Altitude chart",
         "group": "b31b0b58eb65912f",
-        "order": 9,
+        "order": 1,
         "width": 0,
         "height": 0,
         "label": "Altitude [m]",
@@ -879,14 +855,14 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "output.csv write",
-        "filename": "Desktop/CanSatOutput/output.csv",
-        "filenameType": "str",
+        "filename": "path",
+        "filenameType": "msg",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "utf8",
-        "x": 1480,
-        "y": 720,
+        "x": 1740,
+        "y": 680,
         "wires": [
             []
         ]
@@ -900,7 +876,7 @@
         "spec": "rfc",
         "sep": ",",
         "hdrin": "",
-        "hdrout": "once",
+        "hdrout": "all",
         "multi": "one",
         "ret": "\\n",
         "temp": "Temperature, Pressure, Altitude, Humidity, Onboard Temperature, Counter",
@@ -908,11 +884,11 @@
         "strings": true,
         "include_empty_strings": true,
         "include_null_values": true,
-        "x": 1220,
-        "y": 720,
+        "x": 1300,
+        "y": 680,
         "wires": [
             [
-                "b715fb60e8ea33eb"
+                "b4b1bc06347f5ef3"
             ]
         ]
     },
@@ -922,19 +898,176 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.humidity, msg.payload.onboard_temperature, msg.payload.counter];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.onboardTemperature, msg.payload.packetCount];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 720,
+        "x": 1010,
+        "y": 680,
         "wires": [
             [
                 "1c7ec72837ef7e8d"
             ]
         ]
+    },
+    {
+        "id": "d4927d3b0776bce7",
+        "type": "ui_button",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "",
+        "group": "bc35821eb5c27229",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Save data to new file",
+        "tooltip": "Starts saving data to another file",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 760,
+        "wires": [
+            [
+                "f2680cc46f6c4dda"
+            ]
+        ]
+    },
+    {
+        "id": "f2680cc46f6c4dda",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "Increase save file number",
+        "func": "let num = flow.get(\"save_file_num\");\nflow.set(\"save_file_num\", num+1);\nlet new_num = flow.get(\"save_file_num\");\nflow.set(\"save_file_path\",\"Desktop/CanSatOutput/output_\"+new_num+\".csv\");\nmsg.payload = new_num;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03cfcc4cb4955c13",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Start file Counter",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"save_file_num\", 0);\nflow.set(\"save_file_path\", \"Desktop/CanSatOutput/output_0.csv\");",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 500,
+        "wires": [
+            [
+                "dacaf47b3dcc5134"
+            ]
+        ]
+    },
+    {
+        "id": "b4b1bc06347f5ef3",
+        "type": "change",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "path",
+                "pt": "msg",
+                "to": "save_file_path",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1530,
+        "y": 680,
+        "wires": [
+            [
+                "b715fb60e8ea33eb"
+            ]
+        ]
+    },
+    {
+        "id": "78fc3745a99e9119",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "group": "bc35821eb5c27229",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Saving To File Num:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1800,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5fd35d1296ac30d0",
+        "type": "inject",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "save_file_num",
+        "payloadType": "flow",
+        "x": 1560,
+        "y": 760,
+        "wires": [
+            [
+                "78fc3745a99e9119"
+            ]
+        ]
+    },
+    {
+        "id": "40fda92c9ea1533e",
+        "type": "comment",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "TODO",
+        "info": "# TODO\n - Add new header after changing destination file in csv parser",
+        "x": 1390,
+        "y": 840,
+        "wires": []
     }
 ]
