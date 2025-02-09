@@ -57,9 +57,7 @@
             "4702d732236ca5bc",
             "045d5afefe99a778",
             "90065f2b1a3a5762",
-            "aae6aa213d618717",
             "3e5a2a28f3501473",
-            "5eafda1826f0d5a4",
             "1a7d0546fdb54147",
             "6e01d36b48497f7d",
             "03cfcc4cb4955c13"
@@ -384,7 +382,6 @@
                 "a0c1bfb091e8e142",
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
-                "aae6aa213d618717",
                 "1a7d0546fdb54147",
                 "b02107c82c051e61"
             ]
@@ -701,27 +698,6 @@
         ]
     },
     {
-        "id": "aae6aa213d618717",
-        "type": "function",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Parse Humidity",
-        "func": "msg.payload = msg.payload.humidity;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 940,
-        "y": 440,
-        "wires": [
-            [
-                "5eafda1826f0d5a4"
-            ]
-        ]
-    },
-    {
         "id": "3e5a2a28f3501473",
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
@@ -762,51 +738,6 @@
         "className": "",
         "x": 1180,
         "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5eafda1826f0d5a4",
-        "type": "ui_chart",
-        "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
-        "name": "Humidity Chart",
-        "group": "b31b0b58eb65912f",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Humidity [%]",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Waiting for sensor Data",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 1180,
-        "y": 440,
         "wires": [
             []
         ]
@@ -967,7 +898,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.humidity, msg.payload.onboardTemperature, msg.payload.packetCount];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.onboardTemperature, msg.payload.packetCount];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
