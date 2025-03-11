@@ -255,17 +255,6 @@
         }
     },
     {
-        "id": "4c73ace1e4886fb4",
-        "type": "ui_group",
-        "name": "Internal Temperature Data",
-        "tab": "3c32f7ed1a78d140",
-        "order": 2,
-        "disp": true,
-        "width": 8,
-        "collapse": true,
-        "className": ""
-    },
-    {
         "id": "bc35821eb5c27229",
         "type": "ui_group",
         "name": "Ground Station Status",
@@ -321,6 +310,17 @@
         "order": 1,
         "disp": true,
         "width": 12,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "4c73ace1e4886fb4",
+        "type": "ui_group",
+        "name": "Internal Temperature Data",
+        "tab": "3c32f7ed1a78d140",
+        "order": 2,
+        "disp": true,
+        "width": 8,
         "collapse": true,
         "className": ""
     },
@@ -489,7 +489,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"packetCount\":-1,\"packetsFailed\":9999}",
+        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"packetCount\":-1,\"packetsFailed\":999}",
         "payloadType": "json",
         "x": 300,
         "y": 260,
@@ -896,7 +896,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let values_array = [Date.now() ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\n// console.log(Date.now())\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let now = new Date();\n// console.log(now.toLocaleString('sk-SK'));\nlet values_array = [now.toLocaleString('sk-SK') ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
