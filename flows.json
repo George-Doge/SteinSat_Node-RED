@@ -60,12 +60,21 @@
             "3e5a2a28f3501473",
             "1a7d0546fdb54147",
             "6e01d36b48497f7d",
-            "03cfcc4cb4955c13"
+            "03cfcc4cb4955c13",
+            "0e757d4df0c32a89",
+            "38aa4d9489bd8cfb",
+            "7121ce101ef29677",
+            "ab02dbc4f06b09d3",
+            "99f90f0ccf3b40de",
+            "55062ad224ee5a6f",
+            "0efc06c8c1fb654b",
+            "f229d802f0502fa8",
+            "fd2daee4a048ae7e"
         ],
         "x": 174,
-        "y": 79,
+        "y": -21,
         "w": 1192,
-        "h": 542
+        "h": 582
     },
     {
         "id": "d9b017e772e6b8ed",
@@ -116,7 +125,7 @@
         "x": 874,
         "y": 639,
         "w": 1052,
-        "h": 242
+        "h": 222
     },
     {
         "id": "9b811b88a2e893d0",
@@ -141,8 +150,9 @@
     {
         "id": "81dac7e1a86008bc",
         "type": "ui_tab",
-        "name": "Main",
+        "name": "Main Dashboard - BMP, Packet Status",
         "icon": "dashboard",
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
@@ -150,7 +160,7 @@
         "id": "452071d4f69ee64f",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -160,9 +170,10 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#ffdd00",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -172,16 +183,16 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
+                    "default": "#097479",
+                    "value": "#ffdd00",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#ffdd00",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
+                    "value": "#111111",
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
@@ -189,27 +200,27 @@
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#1bbfff",
+                    "value": "#ffe74d",
                     "edited": false
                 },
                 "group-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#555555",
                     "edited": false
                 },
                 "group-backgroundColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "widget-textColor": {
-                    "value": "#111111",
+                    "value": "#eeeeee",
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#ffdd00",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -227,7 +238,7 @@
         "site": {
             "name": "Node-RED Dashboard",
             "hideToolbar": "false",
-            "allowSwipe": "false",
+            "allowSwipe": "mouse",
             "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
@@ -246,11 +257,11 @@
     {
         "id": "4c73ace1e4886fb4",
         "type": "ui_group",
-        "name": "Internal Temp Group",
-        "tab": "81dac7e1a86008bc",
-        "order": 4,
+        "name": "Internal Temperature Data",
+        "tab": "3c32f7ed1a78d140",
+        "order": 2,
         "disp": true,
-        "width": 6,
+        "width": 8,
         "collapse": true,
         "className": ""
     },
@@ -268,7 +279,7 @@
     {
         "id": "09380e53c37d0afe",
         "type": "ui_group",
-        "name": "BME 280 Data 1",
+        "name": "BMP 280 Data 1",
         "tab": "81dac7e1a86008bc",
         "order": 2,
         "disp": true,
@@ -285,7 +296,7 @@
     {
         "id": "b31b0b58eb65912f",
         "type": "ui_group",
-        "name": "BME 280 Data 2",
+        "name": "BMP 280 Data 2",
         "tab": "81dac7e1a86008bc",
         "order": 3,
         "disp": true,
@@ -296,40 +307,22 @@
     {
         "id": "3c32f7ed1a78d140",
         "type": "ui_tab",
-        "name": "Data Read",
+        "name": "Accelerometer Data Read",
         "icon": "dashboard",
         "order": 2,
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "209f46aa68dbd3f5",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 2,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "cf07f92e2ece3026",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "b31b0b58eb65912f",
-        "order": 2,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "1ddda3f406556e61",
+        "id": "3e23bdec243c8a23",
         "type": "ui_group",
-        "name": "Group 1",
+        "name": "MPU6050 Data",
         "tab": "3c32f7ed1a78d140",
         "order": 1,
         "disp": true,
-        "width": 6
+        "width": 12,
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "3547dfa233b7d62e",
@@ -360,8 +353,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
-        "y": 120,
+        "x": 630,
+        "y": 80,
         "wires": []
     },
     {
@@ -383,7 +376,12 @@
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
                 "1a7d0546fdb54147",
-                "b02107c82c051e61"
+                "b02107c82c051e61",
+                "0e757d4df0c32a89",
+                "38aa4d9489bd8cfb",
+                "ab02dbc4f06b09d3",
+                "99f90f0ccf3b40de",
+                "55062ad224ee5a6f"
             ]
         ]
     },
@@ -392,12 +390,12 @@
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
-        "name": "Internal Temperature",
+        "name": "Onboard Temperature",
         "group": "4c73ace1e4886fb4",
         "order": 1,
         "width": 0,
         "height": 0,
-        "label": "Onboard Temp [°C]",
+        "label": "Onboard Temperature [°C]",
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm:ss",
@@ -406,7 +404,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "1",
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -427,7 +425,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1240,
-        "y": 500,
+        "y": 200,
         "wires": [
             []
         ]
@@ -451,7 +449,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1200,
-        "y": 580,
+        "y": 260,
         "wires": []
     },
     {
@@ -468,7 +466,7 @@
         "finalize": "",
         "libs": [],
         "x": 980,
-        "y": 500,
+        "y": 200,
         "wires": [
             [
                 "b84c65335caff905"
@@ -486,12 +484,12 @@
                 "p": "payload"
             }
         ],
-        "repeat": "1",
+        "repeat": "0.5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"temperature\":5,\"pressure\":1030,\"altitude\":206,\"humidity\":75,\"onboard_temperature\":25,\"counter\":-1}",
+        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"packetCount\":-1,\"packetsFailed\":9999}",
         "payloadType": "json",
         "x": 300,
         "y": 260,
@@ -551,7 +549,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "0638856b0b58533d",
         "group": "bc35821eb5c27229",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "name": "",
@@ -603,7 +601,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 260,
+        "y": 20,
         "wires": [
             [
                 "4702d732236ca5bc"
@@ -629,7 +627,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -650,7 +648,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1180,
-        "y": 260,
+        "y": 20,
         "wires": [
             []
         ]
@@ -669,7 +667,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 320,
+        "y": 80,
         "wires": [
             [
                 "3e5a2a28f3501473"
@@ -690,7 +688,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 380,
+        "y": 140,
         "wires": [
             [
                 "6e01d36b48497f7d"
@@ -704,7 +702,7 @@
         "g": "3ac4614074b584c9",
         "name": "Pressure Chart",
         "group": "09380e53c37d0afe",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "label": "Pressure [hpa]",
@@ -716,7 +714,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -737,7 +735,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1180,
-        "y": 320,
+        "y": 80,
         "wires": [
             []
         ]
@@ -789,7 +787,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Simulation checker",
-        "func": "let count = msg.payload.packetCount;\nif (count === -1) {\n    msg.payload.counter = \"Simulated Packet!\";\n}\nreturn msg;",
+        "func": "let count = msg.payload.packetCount;\nif (count === -1) {\n    msg.payload.packetCount = \"Simulated Packet!\";\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -797,7 +795,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 580,
+        "y": 260,
         "wires": [
             [
                 "1a3155631653a283"
@@ -823,7 +821,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -844,7 +842,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1170,
-        "y": 380,
+        "y": 140,
         "wires": [
             []
         ]
@@ -879,7 +877,7 @@
         "hdrout": "all",
         "multi": "one",
         "ret": "\\n",
-        "temp": "Temperature, Pressure, Altitude, Humidity, Onboard Temperature, Counter",
+        "temp": "TIme, isValid?, Onboard Temperature [°C], Temperature [°C], Pressure [hpa] , Altitude [m], Acceleration [m*s^-2], Gyroscope - X [°/s], Gyroscope - Y [°/s], Gyroscope - Z [°/s],Packet counter, Failed packets",
         "skip": "0",
         "strings": true,
         "include_empty_strings": true,
@@ -898,7 +896,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.onboardTemperature, msg.payload.packetCount];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let values_array = [Date.now() ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\n// console.log(Date.now())\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -920,7 +918,7 @@
         "g": "2dde80892adaa781",
         "name": "",
         "group": "bc35821eb5c27229",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1017,7 +1015,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "group": "bc35821eb5c27229",
-        "order": 4,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1066,8 +1064,294 @@
         "g": "2dde80892adaa781",
         "name": "TODO",
         "info": "# TODO\n - Add new header after changing destination file in csv parser",
-        "x": 1390,
-        "y": 840,
+        "x": 1410,
+        "y": 820,
         "wires": []
+    },
+    {
+        "id": "0e757d4df0c32a89",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "group": "bc35821eb5c27229",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Missing Packets:",
+        "format": "{{msg.payload.packetsFailed}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 950,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "38aa4d9489bd8cfb",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse acceleration",
+        "func": "msg.payload = msg.payload.acceleration_vector_magnitude;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 380,
+        "wires": [
+            [
+                "7121ce101ef29677"
+            ]
+        ]
+    },
+    {
+        "id": "7121ce101ef29677",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Acceleration Chart",
+        "group": "3e23bdec243c8a23",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Acceleration [m/s^2]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Acceleration data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1190,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab02dbc4f06b09d3",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro x",
+        "func": "msg.payload = msg.payload.gyro_x;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 440,
+        "wires": [
+            [
+                "0efc06c8c1fb654b"
+            ]
+        ]
+    },
+    {
+        "id": "99f90f0ccf3b40de",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro y",
+        "func": "msg.payload = msg.payload.gyro_y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 480,
+        "wires": [
+            [
+                "f229d802f0502fa8"
+            ]
+        ]
+    },
+    {
+        "id": "55062ad224ee5a6f",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro z",
+        "func": "msg.payload = msg.payload.gyro_z;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "fd2daee4a048ae7e"
+            ]
+        ]
+    },
+    {
+        "id": "0efc06c8c1fb654b",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro x",
+        "group": "3e23bdec243c8a23",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope X Axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f229d802f0502fa8",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro y",
+        "group": "3e23bdec243c8a23",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope Y axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd2daee4a048ae7e",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro z",
+        "group": "3e23bdec243c8a23",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope Z Axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 520,
+        "wires": [
+            []
+        ]
     }
 ]
