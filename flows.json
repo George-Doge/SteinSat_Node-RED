@@ -102,12 +102,19 @@
             "258bac750f7d2a93",
             "ec9525b924ba680c",
             "bbfac5bf78ad021f",
-            "f034562727347e3e"
+            "f034562727347e3e",
+            "f24a9d3b4d2061fd",
+            "3e519ee07cc0946b",
+            "1f9f751f76c33fd8",
+            "a39c66ca81153de0",
+            "3b4eadf86bef4776",
+            "e7c96c5faf4d20e5",
+            "105e5cd07cf932af"
         ],
-        "x": 1944,
+        "x": 1414,
         "y": 39,
-        "w": 562,
-        "h": 142
+        "w": 572,
+        "h": 342
     },
     {
         "id": "3ac4614074b584c9",
@@ -148,17 +155,38 @@
             "0efc06c8c1fb654b",
             "f229d802f0502fa8",
             "fd2daee4a048ae7e",
-            "322395839479519b",
-            "deef6dc2525ed587",
-            "add486f9f1277ce1",
-            "e4bcf1f1ac5df43f",
-            "b984fd2e29d3944d",
             "c84c7a6cec4e2a08"
         ],
         "x": 174,
         "y": 19,
-        "w": 1592,
+        "w": 1192,
         "h": 582
+    },
+    {
+        "id": "9b60b23f3b77cd76",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "deef6dc2525ed587",
+            "322395839479519b",
+            "add486f9f1277ce1",
+            "e4bcf1f1ac5df43f",
+            "b984fd2e29d3944d",
+            "068691d086043357"
+        ],
+        "x": 2074,
+        "y": 59,
+        "w": 512,
+        "h": 282
     },
     {
         "id": "9b811b88a2e893d0",
@@ -359,6 +387,25 @@
         "className": ""
     },
     {
+        "id": "64399d33fa3d2181",
+        "type": "ui_tab",
+        "name": "GPS data Tab",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f9ebca88d41d1574",
+        "type": "ui_group",
+        "name": "GPS Data",
+        "tab": "64399d33fa3d2181",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "3547dfa233b7d62e",
         "type": "serial in",
         "z": "4e3308c8a425e5aa",
@@ -379,7 +426,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Packet Message Debug Printer",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -415,7 +462,6 @@
                 "ab02dbc4f06b09d3",
                 "99f90f0ccf3b40de",
                 "55062ad224ee5a6f",
-                "322395839479519b",
                 "c84c7a6cec4e2a08"
             ]
         ]
@@ -519,17 +565,19 @@
                 "p": "payload"
             }
         ],
-        "repeat": "1",
+        "repeat": "0.5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"lat\":48.716385,\"lng\":21.261074,\"speed_over_ground\":10,\"alt_gps\":206.2,\"packetCount\":-1,\"packetsFailed\":999}",
+        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"lat\":48.716385,\"lng\":21.261074,\"speed_over_ground\":10,\"course_over_ground\":15,\"alt_gps\":206.2,\"packetCount\":-1,\"packetsFailed\":999}",
         "payloadType": "json",
         "x": 300,
         "y": 300,
         "wires": [
-            []
+            [
+                "dacaf47b3dcc5134"
+            ]
         ]
     },
     {
@@ -931,7 +979,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let now = new Date();\n// console.log(now.toLocaleString('sk-SK'));\nlet values_array = [now.toLocaleString('sk-SK') ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure,\n msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, \n msg.payload.lat, msg.payload.lng, msg.payload.speed_over_ground, msg.payload.alt_gps, msg.course_over_ground ,msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let now = new Date();\n// console.log(now.toLocaleString('sk-SK'));\nlet values_array = [now.toLocaleString('sk-SK') ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure,\n msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, \n msg.payload.lat, msg.payload.lng, msg.payload.speed_over_ground, msg.payload.alt_gps, msg.payload.course_over_ground ,msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1004,7 +1052,7 @@
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"save_file_num\", 0);\nflow.set(\"save_file_path\", \"Desktop/CanSatOutput/output_0.csv\");",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"save_file_num\", 0);\nflow.set(\"popped\", false)\nflow.set(\"save_file_path\", \"Desktop/CanSatOutput/output_0.csv\");",
         "finalize": "",
         "libs": [],
         "x": 410,
@@ -1393,7 +1441,7 @@
         "id": "deef6dc2525ed587",
         "type": "udp out",
         "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
+        "g": "9b60b23f3b77cd76",
         "name": "",
         "addr": "127.0.0.1",
         "iface": "",
@@ -1402,15 +1450,15 @@
         "outport": "",
         "base64": false,
         "multicast": "false",
-        "x": 1610,
-        "y": 380,
+        "x": 2430,
+        "y": 140,
         "wires": []
     },
     {
         "id": "322395839479519b",
         "type": "function",
         "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
+        "g": "9b60b23f3b77cd76",
         "name": "Gyro Array",
         "func": "let now = new Date();\nlet epoch = now.getTime();\nlet flight_timestamp = flow.get(\"timestamp_flight_start\");\n\nlet delta = epoch - flight_timestamp;\n\nlet buffer = Buffer.alloc(18);\n\n// header\nbuffer.writeUInt8(0x1, 0);\nbuffer.writeUInt8(4 * 4, 1);\nbuffer.writeUInt32LE(delta, 2);\nbuffer.writeFloatLE(msg.payload.gyro_x, 6);\nbuffer.writeFloatLE(msg.payload.gyro_y, 10);\nbuffer.writeFloatLE(msg.payload.gyro_z, 14);\n\n// let array = [now.toLocaleString('sk-SK'), msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z];\n\nmsg.payload = buffer;\n// console.log(delta);\nreturn msg;",
         "outputs": 1,
@@ -1419,8 +1467,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1350,
-        "y": 380,
+        "x": 2170,
+        "y": 140,
         "wires": [
             [
                 "deef6dc2525ed587"
@@ -1431,7 +1479,7 @@
         "id": "add486f9f1277ce1",
         "type": "udp in",
         "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
+        "g": "9b60b23f3b77cd76",
         "name": "",
         "iface": "",
         "port": "6050",
@@ -1439,8 +1487,8 @@
         "multicast": "false",
         "group": "",
         "datatype": "buffer",
-        "x": 1360,
-        "y": 460,
+        "x": 2180,
+        "y": 220,
         "wires": [
             [
                 "b984fd2e29d3944d"
@@ -1451,7 +1499,7 @@
         "id": "e4bcf1f1ac5df43f",
         "type": "debug",
         "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
+        "g": "9b60b23f3b77cd76",
         "name": "debug 1",
         "active": false,
         "tosidebar": true,
@@ -1461,15 +1509,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1660,
-        "y": 540,
+        "x": 2480,
+        "y": 300,
         "wires": []
     },
     {
         "id": "b984fd2e29d3944d",
         "type": "function",
         "z": "4e3308c8a425e5aa",
-        "g": "3ac4614074b584c9",
+        "g": "9b60b23f3b77cd76",
         "name": "decode udp - debug, disable on run",
         "func": "let buffer = msg.payload;\n\nlet header = buffer.readUInt8(0);\nlet buffer_size = buffer.readUInt8(1);\nlet timestamp = buffer.readUInt32LE(2);\nlet gyro_x = buffer.readFloatLE(6);\nlet gyro_y = buffer.readFloatLE(10);\nlet gyro_z = buffer.readFloatLE(14);\n\nmsg.payload = [header, buffer_size, timestamp, gyro_x, gyro_y, gyro_z];\n\nreturn msg;",
         "outputs": 1,
@@ -1478,8 +1526,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1600,
-        "y": 460,
+        "x": 2420,
+        "y": 220,
         "wires": [
             [
                 "e4bcf1f1ac5df43f"
@@ -1563,7 +1611,7 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 2380,
+        "x": 1860,
         "y": 120,
         "wires": []
     },
@@ -1589,7 +1637,7 @@
         "topic": "position",
         "payload": "{\"name\":\"Bidovce Letisko\",\"lon\":21.44837,\"lat\":48.74327,\"icon\":\"friend\",\"layer\":\"sat\",\"label\":true}",
         "payloadType": "json",
-        "x": 2120,
+        "x": 1600,
         "y": 80,
         "wires": [
             [
@@ -1606,7 +1654,8 @@
         "mode": "link",
         "links": [
             "124df3c39f557658",
-            "bbfac5bf78ad021f"
+            "bbfac5bf78ad021f",
+            "068691d086043357"
         ],
         "x": 725,
         "y": 520,
@@ -1621,7 +1670,7 @@
         "links": [
             "c84c7a6cec4e2a08"
         ],
-        "x": 1985,
+        "x": 1465,
         "y": 140,
         "wires": [
             [
@@ -1635,18 +1684,23 @@
         "z": "4e3308c8a425e5aa",
         "g": "e19beec28c9f2874",
         "name": "Parse GPS Data",
-        "func": "msg.payload = {\n    \"name\": \"SteinSat\",\n    \"lon\": msg.payload.lng,\n    \"lat\": msg.payload.lat,\n    \"alt\": msg.payload.alt_gps + \"m\",\n    \"SOG\": msg.payload.speed_over_ground,\n    \"COG\" : msg.payload.course_over_ground,\n    \"icon\": \"satellite\",\n    \"label\": true,\n    \"layer\": \"sat\"\n}\nreturn msg;",
+        "func": "msg.payload = {\n    \"name\": \"SteinSat\",\n    \"lon\": msg.payload.lng,\n    \"lat\": msg.payload.lat,\n    \"alt\": msg.payload.alt_gps + \"m\",\n    \"SOG\": msg.payload.speed_over_ground,\n    \"COG\" : msg.payload.course_over_ground,\n    \"icon\": \"satellite\",\n    \"label\": true,\n    \"popped\": flow.get(\"popped\"),\n    \"layer\": \"sat\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2120,
+        "x": 1600,
         "y": 140,
         "wires": [
             [
-                "258bac750f7d2a93"
+                "258bac750f7d2a93",
+                "f24a9d3b4d2061fd",
+                "3e519ee07cc0946b",
+                "1f9f751f76c33fd8",
+                "a39c66ca81153de0",
+                "3b4eadf86bef4776"
             ]
         ]
     },
@@ -1664,6 +1718,187 @@
         "wires": [
             [
                 "b02107c82c051e61"
+            ]
+        ]
+    },
+    {
+        "id": "f24a9d3b4d2061fd",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Longitude",
+        "format": "{{msg.payload.lon}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3e519ee07cc0946b",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Altitude",
+        "format": "{{msg.payload.alt}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1f9f751f76c33fd8",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Speed Over Ground",
+        "format": "{{msg.payload.SOG}} [kt]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1860,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a39c66ca81153de0",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Course Over Ground",
+        "format": "{{msg.payload.COG}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1860,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3b4eadf86bef4776",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Latitude",
+        "format": "{{msg.payload.lat}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e7c96c5faf4d20e5",
+        "type": "ui_switch",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "",
+        "label": "Satellite Map Icon Popped?",
+        "tooltip": "Set if satellite icon is popped up or not",
+        "group": "f9ebca88d41d1574",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1560,
+        "y": 220,
+        "wires": [
+            [
+                "105e5cd07cf932af"
+            ]
+        ]
+    },
+    {
+        "id": "105e5cd07cf932af",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "Sat popped function",
+        "func": "flow.set(\"popped\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "068691d086043357",
+        "type": "link in",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "link in 1",
+        "links": [
+            "c84c7a6cec4e2a08"
+        ],
+        "x": 2175,
+        "y": 100,
+        "wires": [
+            [
+                "322395839479519b"
             ]
         ]
     }
