@@ -4,5 +4,10 @@
             "flowFile": "flows.json",
             "credentialsFile": "flows_cred.json"
         }
+    },
+    "dependencies": {
+        "node-red-contrib-web-worldmap": "5.1.2",
+        "node-red-dashboard": "3.6.5",
+        "node-red-node-serialport": "2.0.3"
     }
 }
