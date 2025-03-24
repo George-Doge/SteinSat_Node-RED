@@ -32,42 +32,6 @@
         "h": 162
     },
     {
-        "id": "3ac4614074b584c9",
-        "type": "group",
-        "z": "4e3308c8a425e5aa",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "3547dfa233b7d62e",
-            "d7a8be1ef2c3f08c",
-            "dacaf47b3dcc5134",
-            "b84c65335caff905",
-            "1a3155631653a283",
-            "a1e48aac6d605c8d",
-            "e1492797c96fc727",
-            "06fa0a8f0128871d",
-            "a0c1bfb091e8e142",
-            "4702d732236ca5bc",
-            "045d5afefe99a778",
-            "90065f2b1a3a5762",
-            "3e5a2a28f3501473",
-            "1a7d0546fdb54147",
-            "6e01d36b48497f7d",
-            "03cfcc4cb4955c13"
-        ],
-        "x": 174,
-        "y": 79,
-        "w": 1192,
-        "h": 542
-    },
-    {
         "id": "d9b017e772e6b8ed",
         "type": "group",
         "z": "4e3308c8a425e5aa",
@@ -111,18 +75,124 @@
             "b4b1bc06347f5ef3",
             "78fc3745a99e9119",
             "5fd35d1296ac30d0",
-            "40fda92c9ea1533e"
+            "40fda92c9ea1533e",
+            "0745cfde561ad2ce",
+            "a9d2a1c69d4845e8",
+            "124df3c39f557658"
         ],
-        "x": 874,
+        "x": 1004,
         "y": 639,
-        "w": 1052,
+        "w": 1142,
         "h": 242
+    },
+    {
+        "id": "e19beec28c9f2874",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "258bac750f7d2a93",
+            "ec9525b924ba680c",
+            "bbfac5bf78ad021f",
+            "f034562727347e3e",
+            "f24a9d3b4d2061fd",
+            "3e519ee07cc0946b",
+            "1f9f751f76c33fd8",
+            "a39c66ca81153de0",
+            "3b4eadf86bef4776",
+            "e7c96c5faf4d20e5",
+            "105e5cd07cf932af"
+        ],
+        "x": 1414,
+        "y": 39,
+        "w": 572,
+        "h": 342
+    },
+    {
+        "id": "3ac4614074b584c9",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3547dfa233b7d62e",
+            "d7a8be1ef2c3f08c",
+            "dacaf47b3dcc5134",
+            "b84c65335caff905",
+            "1a3155631653a283",
+            "a1e48aac6d605c8d",
+            "e1492797c96fc727",
+            "06fa0a8f0128871d",
+            "a0c1bfb091e8e142",
+            "4702d732236ca5bc",
+            "045d5afefe99a778",
+            "90065f2b1a3a5762",
+            "3e5a2a28f3501473",
+            "1a7d0546fdb54147",
+            "6e01d36b48497f7d",
+            "03cfcc4cb4955c13",
+            "0e757d4df0c32a89",
+            "38aa4d9489bd8cfb",
+            "7121ce101ef29677",
+            "ab02dbc4f06b09d3",
+            "99f90f0ccf3b40de",
+            "55062ad224ee5a6f",
+            "0efc06c8c1fb654b",
+            "f229d802f0502fa8",
+            "fd2daee4a048ae7e",
+            "c84c7a6cec4e2a08"
+        ],
+        "x": 174,
+        "y": 19,
+        "w": 1192,
+        "h": 582
+    },
+    {
+        "id": "9b60b23f3b77cd76",
+        "type": "group",
+        "z": "4e3308c8a425e5aa",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "deef6dc2525ed587",
+            "322395839479519b",
+            "add486f9f1277ce1",
+            "e4bcf1f1ac5df43f",
+            "b984fd2e29d3944d",
+            "068691d086043357"
+        ],
+        "x": 2074,
+        "y": 59,
+        "w": 512,
+        "h": 282
     },
     {
         "id": "9b811b88a2e893d0",
         "type": "serial-port",
         "name": "CanSat",
-        "serialport": "/dev/ttyACM0",
+        "serialport": "/dev/ttyUSB0",
         "serialbaud": "115200",
         "databits": 8,
         "parity": "none",
@@ -141,8 +211,9 @@
     {
         "id": "81dac7e1a86008bc",
         "type": "ui_tab",
-        "name": "Main",
+        "name": "Main Dashboard - BMP, Packet Status",
         "icon": "dashboard",
+        "order": 1,
         "disabled": false,
         "hidden": false
     },
@@ -150,7 +221,7 @@
         "id": "452071d4f69ee64f",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-custom",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -160,56 +231,58 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#ffdd00",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseColor": "#3e605f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
+                    "default": "#4B7930",
+                    "value": "#3e605f",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#3e605f",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#5c8e8d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#3e605f",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -227,7 +300,7 @@
         "site": {
             "name": "Node-RED Dashboard",
             "hideToolbar": "false",
-            "allowSwipe": "false",
+            "allowSwipe": "mouse",
             "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
@@ -244,17 +317,6 @@
         }
     },
     {
-        "id": "4c73ace1e4886fb4",
-        "type": "ui_group",
-        "name": "Internal Temp Group",
-        "tab": "81dac7e1a86008bc",
-        "order": 4,
-        "disp": true,
-        "width": 6,
-        "collapse": true,
-        "className": ""
-    },
-    {
         "id": "bc35821eb5c27229",
         "type": "ui_group",
         "name": "Ground Station Status",
@@ -268,7 +330,7 @@
     {
         "id": "09380e53c37d0afe",
         "type": "ui_group",
-        "name": "BME 280 Data 1",
+        "name": "BMP 280 Data 1",
         "tab": "81dac7e1a86008bc",
         "order": 2,
         "disp": true,
@@ -285,7 +347,7 @@
     {
         "id": "b31b0b58eb65912f",
         "type": "ui_group",
-        "name": "BME 280 Data 2",
+        "name": "BMP 280 Data 2",
         "tab": "81dac7e1a86008bc",
         "order": 3,
         "disp": true,
@@ -296,40 +358,52 @@
     {
         "id": "3c32f7ed1a78d140",
         "type": "ui_tab",
-        "name": "Data Read",
+        "name": "Accelerometer Data Read",
         "icon": "dashboard",
         "order": 2,
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "209f46aa68dbd3f5",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "09380e53c37d0afe",
-        "order": 2,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "cf07f92e2ece3026",
-        "type": "ui_spacer",
-        "z": "4e3308c8a425e5aa",
-        "name": "spacer",
-        "group": "b31b0b58eb65912f",
-        "order": 2,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "1ddda3f406556e61",
+        "id": "3e23bdec243c8a23",
         "type": "ui_group",
-        "name": "Group 1",
+        "name": "MPU6050 Data",
         "tab": "3c32f7ed1a78d140",
         "order": 1,
         "disp": true,
-        "width": 6
+        "width": 12,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "4c73ace1e4886fb4",
+        "type": "ui_group",
+        "name": "Internal Temperature Data",
+        "tab": "3c32f7ed1a78d140",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "64399d33fa3d2181",
+        "type": "ui_tab",
+        "name": "GPS data Tab",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f9ebca88d41d1574",
+        "type": "ui_group",
+        "name": "GPS Data",
+        "tab": "64399d33fa3d2181",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "3547dfa233b7d62e",
@@ -339,7 +413,7 @@
         "name": "Read CanSat",
         "serial": "9b811b88a2e893d0",
         "x": 290,
-        "y": 380,
+        "y": 420,
         "wires": [
             [
                 "03cfcc4cb4955c13"
@@ -360,7 +434,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
+        "x": 630,
         "y": 120,
         "wires": []
     },
@@ -374,7 +448,7 @@
         "action": "obj",
         "pretty": true,
         "x": 580,
-        "y": 380,
+        "y": 420,
         "wires": [
             [
                 "d7a8be1ef2c3f08c",
@@ -383,7 +457,12 @@
                 "045d5afefe99a778",
                 "90065f2b1a3a5762",
                 "1a7d0546fdb54147",
-                "b02107c82c051e61"
+                "0e757d4df0c32a89",
+                "38aa4d9489bd8cfb",
+                "ab02dbc4f06b09d3",
+                "99f90f0ccf3b40de",
+                "55062ad224ee5a6f",
+                "c84c7a6cec4e2a08"
             ]
         ]
     },
@@ -392,21 +471,21 @@
         "type": "ui_chart",
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
-        "name": "Internal Temperature",
+        "name": "Onboard Temperature",
         "group": "4c73ace1e4886fb4",
         "order": 1,
         "width": 0,
         "height": 0,
-        "label": "Onboard Temp [°C]",
+        "label": "Onboard Temperature [°C]",
         "chartType": "line",
-        "legend": "true",
+        "legend": "false",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
         "nodata": "Waiting for Onboard Temperature Data",
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "1",
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -427,7 +506,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1240,
-        "y": 500,
+        "y": 240,
         "wires": [
             []
         ]
@@ -451,7 +530,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 1200,
-        "y": 580,
+        "y": 300,
         "wires": []
     },
     {
@@ -468,7 +547,7 @@
         "finalize": "",
         "libs": [],
         "x": 980,
-        "y": 500,
+        "y": 240,
         "wires": [
             [
                 "b84c65335caff905"
@@ -486,15 +565,15 @@
                 "p": "payload"
             }
         ],
-        "repeat": "1",
+        "repeat": "0.5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"temperature\":5,\"pressure\":1030,\"altitude\":206,\"humidity\":75,\"onboard_temperature\":25,\"counter\":-1}",
+        "payload": "{\"isValid\":true,\"onboardTemperature\":25,\"temperature\":15.9848,\"pressure\":1030.5,\"altitude\":206.1333,\"acceleration_vector_magnitude\":3.45481,\"gyro_x\":0.1111504,\"gyro_y\":0.1111504,\"gyro_z\":0.1111504,\"lat\":48.716385,\"lng\":21.261074,\"speed_over_ground\":10,\"course_over_ground\":15,\"alt_gps\":206.2,\"packetCount\":-1,\"packetsFailed\":999}",
         "payloadType": "json",
         "x": 300,
-        "y": 260,
+        "y": 300,
         "wires": [
             []
         ]
@@ -507,7 +586,7 @@
         "name": "Simulated input comment",
         "info": "This inject node is meant to simulate input from CanSat with data if none is available.",
         "x": 350,
-        "y": 220,
+        "y": 260,
         "wires": []
     },
     {
@@ -551,7 +630,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "0638856b0b58533d",
         "group": "bc35821eb5c27229",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "name": "",
@@ -603,7 +682,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 260,
+        "y": 60,
         "wires": [
             [
                 "4702d732236ca5bc"
@@ -629,7 +708,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -650,7 +729,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1180,
-        "y": 260,
+        "y": 60,
         "wires": [
             []
         ]
@@ -669,7 +748,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 320,
+        "y": 120,
         "wires": [
             [
                 "3e5a2a28f3501473"
@@ -690,7 +769,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 380,
+        "y": 180,
         "wires": [
             [
                 "6e01d36b48497f7d"
@@ -704,7 +783,7 @@
         "g": "3ac4614074b584c9",
         "name": "Pressure Chart",
         "group": "09380e53c37d0afe",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "label": "Pressure [hpa]",
@@ -716,7 +795,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -737,7 +816,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1180,
-        "y": 320,
+        "y": 120,
         "wires": [
             []
         ]
@@ -789,7 +868,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "3ac4614074b584c9",
         "name": "Simulation checker",
-        "func": "let count = msg.payload.packetCount;\nif (count === -1) {\n    msg.payload.counter = \"Simulated Packet!\";\n}\nreturn msg;",
+        "func": "let count = msg.payload.packetCount;\nif (count === -1) {\n    msg.payload.packetCount = \"Simulated Packet!\";\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -797,7 +876,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 580,
+        "y": 300,
         "wires": [
             [
                 "1a3155631653a283"
@@ -823,7 +902,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "5",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -844,7 +923,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 1170,
-        "y": 380,
+        "y": 180,
         "wires": [
             []
         ]
@@ -861,7 +940,7 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "utf8",
-        "x": 1740,
+        "x": 1960,
         "y": 680,
         "wires": [
             []
@@ -879,12 +958,12 @@
         "hdrout": "all",
         "multi": "one",
         "ret": "\\n",
-        "temp": "Temperature, Pressure, Altitude, Humidity, Onboard Temperature, Counter",
+        "temp": "TIme, isValid?, Onboard Temperature [°C], Temperature [°C], Pressure [hpa] , Altitude [m], Acceleration [m*s^-2], Gyroscope - X [°/s], Gyroscope - Y [°/s], Gyroscope - Z [°/s], Latitude [°], Longitude [°], Ground Speed [kt], Altitude (GPS) [m], Course Over Ground [°], Packet counter, Failed packets",
         "skip": "0",
         "strings": true,
         "include_empty_strings": true,
         "include_null_values": true,
-        "x": 1300,
+        "x": 1520,
         "y": 680,
         "wires": [
             [
@@ -898,14 +977,14 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "name": "JSON to Array Converter",
-        "func": "let values_array = [msg.payload.temperature, msg.payload.pressure, msg.payload.altitude, msg.payload.onboardTemperature, msg.payload.packetCount];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
+        "func": "let now = new Date();\n// console.log(now.toLocaleString('sk-SK'));\nlet values_array = [now.toLocaleString('sk-SK') ,msg.payload.isValid ,msg.payload.onboardTemperature, msg.payload.temperature, msg.payload.pressure,\n msg.payload.altitude, msg.payload.acceleration_vector_magnitude, msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z, \n msg.payload.lat, msg.payload.lng, msg.payload.speed_over_ground, msg.payload.alt_gps, msg.payload.course_over_ground ,msg.payload.packetCount, msg.payload.packetsFailed];\n// console.log(values_array);\nmsg.payload = values_array;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
+        "x": 1230,
         "y": 680,
         "wires": [
             [
@@ -920,7 +999,7 @@
         "g": "2dde80892adaa781",
         "name": "",
         "group": "bc35821eb5c27229",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -934,7 +1013,7 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1000,
+        "x": 1220,
         "y": 760,
         "wires": [
             [
@@ -955,7 +1034,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1290,
+        "x": 1510,
         "y": 760,
         "wires": [
             []
@@ -971,11 +1050,11 @@
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"save_file_num\", 0);\nflow.set(\"save_file_path\", \"Desktop/CanSatOutput/output_0.csv\");",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"save_file_num\", 0);\nflow.set(\"popped\", false)\nflow.set(\"save_file_path\", \"Desktop/CanSatOutput/output_0.csv\");",
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "dacaf47b3dcc5134"
@@ -1003,7 +1082,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1530,
+        "x": 1750,
         "y": 680,
         "wires": [
             [
@@ -1017,7 +1096,7 @@
         "z": "4e3308c8a425e5aa",
         "g": "2dde80892adaa781",
         "group": "bc35821eb5c27229",
-        "order": 4,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1029,7 +1108,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1800,
+        "x": 2020,
         "y": 760,
         "wires": []
     },
@@ -1051,7 +1130,7 @@
         "topic": "",
         "payload": "save_file_num",
         "payloadType": "flow",
-        "x": 1560,
+        "x": 1780,
         "y": 760,
         "wires": [
             [
@@ -1066,8 +1145,759 @@
         "g": "2dde80892adaa781",
         "name": "TODO",
         "info": "# TODO\n - Add new header after changing destination file in csv parser",
-        "x": 1390,
+        "x": 1770,
         "y": 840,
         "wires": []
+    },
+    {
+        "id": "0e757d4df0c32a89",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "group": "bc35821eb5c27229",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Missing Packets:",
+        "format": "{{msg.payload.packetsFailed}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 950,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "38aa4d9489bd8cfb",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse acceleration",
+        "func": "msg.payload = msg.payload.acceleration_vector_magnitude;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 420,
+        "wires": [
+            [
+                "7121ce101ef29677"
+            ]
+        ]
+    },
+    {
+        "id": "7121ce101ef29677",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Acceleration Chart",
+        "group": "3e23bdec243c8a23",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Acceleration [m/s^2]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Acceleration data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1190,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab02dbc4f06b09d3",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro x",
+        "func": "msg.payload = msg.payload.gyro_x;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 480,
+        "wires": [
+            [
+                "0efc06c8c1fb654b"
+            ]
+        ]
+    },
+    {
+        "id": "99f90f0ccf3b40de",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro y",
+        "func": "msg.payload = msg.payload.gyro_y;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 520,
+        "wires": [
+            [
+                "f229d802f0502fa8"
+            ]
+        ]
+    },
+    {
+        "id": "55062ad224ee5a6f",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Parse gyro z",
+        "func": "msg.payload = msg.payload.gyro_z;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 560,
+        "wires": [
+            [
+                "fd2daee4a048ae7e"
+            ]
+        ]
+    },
+    {
+        "id": "0efc06c8c1fb654b",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro x",
+        "group": "3e23bdec243c8a23",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope X Axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Gyroscope data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f229d802f0502fa8",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro y",
+        "group": "3e23bdec243c8a23",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope Y axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Gyroscope data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd2daee4a048ae7e",
+        "type": "ui_chart",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "gyro z",
+        "group": "3e23bdec243c8a23",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Gyroscope Z Axis [°/s]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Gyroscope data",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "deef6dc2525ed587",
+        "type": "udp out",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "6050",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 2430,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "322395839479519b",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "Gyro Array",
+        "func": "let now = new Date();\nlet epoch = now.getTime();\nlet flight_timestamp = flow.get(\"timestamp_flight_start\");\n\nlet delta = epoch - flight_timestamp;\n\nlet buffer = Buffer.alloc(18);\n\n// header\nbuffer.writeUInt8(0x1, 0);\nbuffer.writeUInt8(4 * 4, 1);\nbuffer.writeUInt32LE(delta, 2);\nbuffer.writeFloatLE(msg.payload.gyro_x, 6);\nbuffer.writeFloatLE(msg.payload.gyro_y, 10);\nbuffer.writeFloatLE(msg.payload.gyro_z, 14);\n\n// let array = [now.toLocaleString('sk-SK'), msg.payload.gyro_x, msg.payload.gyro_y, msg.payload.gyro_z];\n\nmsg.payload = buffer;\n// console.log(delta);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2170,
+        "y": 140,
+        "wires": [
+            [
+                "deef6dc2525ed587"
+            ]
+        ]
+    },
+    {
+        "id": "add486f9f1277ce1",
+        "type": "udp in",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "",
+        "iface": "",
+        "port": "6050",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 2180,
+        "y": 220,
+        "wires": [
+            [
+                "b984fd2e29d3944d"
+            ]
+        ]
+    },
+    {
+        "id": "e4bcf1f1ac5df43f",
+        "type": "debug",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b984fd2e29d3944d",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "decode udp - debug, disable on run",
+        "func": "let buffer = msg.payload;\n\nlet header = buffer.readUInt8(0);\nlet buffer_size = buffer.readUInt8(1);\nlet timestamp = buffer.readUInt32LE(2);\nlet gyro_x = buffer.readFloatLE(6);\nlet gyro_y = buffer.readFloatLE(10);\nlet gyro_z = buffer.readFloatLE(14);\n\nmsg.payload = [header, buffer_size, timestamp, gyro_x, gyro_y, gyro_z];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2420,
+        "y": 220,
+        "wires": [
+            [
+                "e4bcf1f1ac5df43f"
+            ]
+        ]
+    },
+    {
+        "id": "0745cfde561ad2ce",
+        "type": "ui_button",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "",
+        "group": "bc35821eb5c27229",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Mark Flight Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "timestamp_flight_start",
+        "topicType": "msg",
+        "x": 1220,
+        "y": 820,
+        "wires": [
+            [
+                "a9d2a1c69d4845e8"
+            ]
+        ]
+    },
+    {
+        "id": "a9d2a1c69d4845e8",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "set flow timestamp_flight_start",
+        "func": "flow.set(\"timestamp_flight_start\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "258bac750f7d2a93",
+        "type": "worldmap",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "SteinSat Map Plotter",
+        "lat": "48.74327",
+        "lon": "21.44837",
+        "zoom": "14",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "true",
+        "showruler": "true",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,RW",
+        "maplist": "OSMG,OSMC,EsriC,EsriS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1860,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ec9525b924ba680c",
+        "type": "inject",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "Bidovce Airport Location",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "position",
+        "payload": "{\"name\":\"Bidovce Letisko\",\"lon\":21.44837,\"lat\":48.74327,\"icon\":\"friend\",\"layer\":\"sat\",\"label\":true}",
+        "payloadType": "json",
+        "x": 1600,
+        "y": 80,
+        "wires": [
+            [
+                "258bac750f7d2a93"
+            ]
+        ]
+    },
+    {
+        "id": "c84c7a6cec4e2a08",
+        "type": "link out",
+        "z": "4e3308c8a425e5aa",
+        "g": "3ac4614074b584c9",
+        "name": "Link Map",
+        "mode": "link",
+        "links": [
+            "124df3c39f557658",
+            "bbfac5bf78ad021f",
+            "068691d086043357"
+        ],
+        "x": 725,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bbfac5bf78ad021f",
+        "type": "link in",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "Link Map Out",
+        "links": [
+            "c84c7a6cec4e2a08"
+        ],
+        "x": 1465,
+        "y": 140,
+        "wires": [
+            [
+                "f034562727347e3e"
+            ]
+        ]
+    },
+    {
+        "id": "f034562727347e3e",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "Parse GPS Data",
+        "func": "msg.payload = {\n    \"name\": \"SteinSat\",\n    \"lon\": msg.payload.lng,\n    \"lat\": msg.payload.lat,\n    \"alt\": msg.payload.alt_gps + \"m\",\n    \"SOG\": msg.payload.speed_over_ground,\n    \"COG\" : msg.payload.course_over_ground,\n    \"icon\": \"satellite\",\n    \"label\": true,\n    \"popped\": flow.get(\"popped\"),\n    \"layer\": \"sat\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 140,
+        "wires": [
+            [
+                "258bac750f7d2a93",
+                "f24a9d3b4d2061fd",
+                "3e519ee07cc0946b",
+                "1f9f751f76c33fd8",
+                "a39c66ca81153de0",
+                "3b4eadf86bef4776"
+            ]
+        ]
+    },
+    {
+        "id": "124df3c39f557658",
+        "type": "link in",
+        "z": "4e3308c8a425e5aa",
+        "g": "2dde80892adaa781",
+        "name": "Link In Data Saving",
+        "links": [
+            "c84c7a6cec4e2a08"
+        ],
+        "x": 1045,
+        "y": 680,
+        "wires": [
+            [
+                "b02107c82c051e61"
+            ]
+        ]
+    },
+    {
+        "id": "f24a9d3b4d2061fd",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Longitude",
+        "format": "{{msg.payload.lon}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3e519ee07cc0946b",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Altitude",
+        "format": "{{msg.payload.alt}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1f9f751f76c33fd8",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Speed Over Ground",
+        "format": "{{msg.payload.SOG}} [kt]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1860,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a39c66ca81153de0",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Course Over Ground",
+        "format": "{{msg.payload.COG}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1860,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3b4eadf86bef4776",
+        "type": "ui_text",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "group": "f9ebca88d41d1574",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Latitude",
+        "format": "{{msg.payload.lat}} [°]",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e7c96c5faf4d20e5",
+        "type": "ui_switch",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "",
+        "label": "Satellite Map Icon Popped?",
+        "tooltip": "Set if satellite icon is popped up or not",
+        "group": "f9ebca88d41d1574",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1560,
+        "y": 220,
+        "wires": [
+            [
+                "105e5cd07cf932af"
+            ]
+        ]
+    },
+    {
+        "id": "105e5cd07cf932af",
+        "type": "function",
+        "z": "4e3308c8a425e5aa",
+        "g": "e19beec28c9f2874",
+        "name": "Sat popped function",
+        "func": "flow.set(\"popped\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "068691d086043357",
+        "type": "link in",
+        "z": "4e3308c8a425e5aa",
+        "g": "9b60b23f3b77cd76",
+        "name": "link in 1",
+        "links": [
+            "c84c7a6cec4e2a08"
+        ],
+        "x": 2175,
+        "y": 100,
+        "wires": [
+            [
+                "322395839479519b"
+            ]
+        ]
     }
 ]
